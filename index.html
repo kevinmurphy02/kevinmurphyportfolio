@@ -84,9 +84,9 @@
 									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p>
 									In this project, I built leakage-safe NCAA machine learning models (2019–2024) that learn which team stats matter most. I: <br />
-                                       - Ingested NCAA regular-season box scores and engineered pregame, expanding averages (shifted by one game to prevent leakage), including four-factors, pace, and home/neutral context. <br />
+                                       - Engineered pregame features from NCAA regular- seasonbox scores, including four-factor metrics, pace, and home court advantage <br />
 									   - Trained Logistic Regression and XGBoost. Best model achieved AUC ≈ 0.77, Brier ≈ 0.193 on a true 2024 holdout <br />
-									   - Exported normalized “weights” (summing to 1) and feature importances as JSON for downstream use; validated with ROC curves and calibration metrics <br />
+									   - Exported normalized “weights” and feature importances as JSON for prediction use later <br />
 									</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/kevinmurphy02/College_Basketball_Training_Model/blob/main/College%20Basketball%20Training/notebooks/Regular_Season_Model.ipynb" class="button">View Project</a></li>
@@ -108,13 +108,16 @@
 								</article>
 								<article>
 									<header>
-										<h2><a href="#">SQL Project (in progress)<br />
+										<h2><a href="#">BLS CPI Data Cleaning & Modeling (MySQL)<br />
 										</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>IP</p>
+									<p>In this project I transformed raw Consumer Price Index text files from the U.S. Bureau of Labor Statistics into clean, ready tables in MySQL. I:
+										- Imported raw Consumer Price Index text files from the U.S. Bureau of Labor Statistics into MySQL
+										- Cleaned and normalized the data to handle period codes, cast text values, and filter to valid monthly observations
+										- Built various views and window-function logic to calculate year-over-year inflation and exported cleaned tables as CSV files for analysis and visualization</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">View Project</a></li>
+										<li><a href="https://github.com/kevinmurphy02/SQL_BLS_Cleanup/tree/main" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
@@ -173,4 +176,5 @@
 	</body>
 
 </html>
+
 
