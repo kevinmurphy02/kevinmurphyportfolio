@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 450" role="img" aria-label="Data pipeline showing BLS raw CPI files transformed into fact and dimension tables and year over year inflation views">
+<rect width="740" height="450" fill="#eeefec"/>
+<text x="36" y="43" font-family="Georgia,serif" font-size="20" font-style="italic" fill="#536f70">BLS / A small data warehouse</text>
+<line x1="36" x2="705" y1="59" y2="59" stroke="#c4ccc7"/>
+<g font-family="Arial,sans-serif" fill="#46595a">
+<text x="41" y="105" font-size="12" letter-spacing="1">RAW FILES</text><text x="304" y="105" font-size="12" letter-spacing="1">MODEL</text><text x="567" y="105" font-size="12" letter-spacing="1">OUTPUT</text>
+</g>
+<g stroke="#b7c3bf" fill="#fcfcf9"><rect x="38" y="133" width="181" height="226"/><rect x="278" y="133" width="190" height="226"/><rect x="527" y="133" width="179" height="226"/></g>
+<g font-family="monospace" fill="#415656" font-size="13">
+<text x="50" y="163">cu.data</text><path d="M50 179H205M50 193H178M50 207H196M50 221H157M50 235H196M50 249H184M50 263H199M50 277H161" stroke="#b1bfb8" stroke-width="1.8"/>
+<text x="290" y="163">fact_cpi_monthly</text><text x="290" y="201" font-size="12">dim_series</text><text x="290" y="230" font-size="12">dim_area</text><text x="290" y="259" font-size="12">dim_item</text><text x="290" y="288" font-size="12">dim_period</text>
+<text x="540" y="163">inflation_yoy</text><text x="540" y="201" font-size="12">series_id</text><text x="540" y="230" font-size="12">period</text><text x="540" y="259" font-size="12">index_value</text><text x="540" y="288" font-size="12">yoy_change</text>
+</g>
+<g stroke="#829991" stroke-width="2" fill="none"><path d="M222 245h53M266 239l9 6-9 6M470 245h54M515 239l9 6-9 6"/></g>
+</svg>

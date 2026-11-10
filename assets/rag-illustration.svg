@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 450" role="img" aria-label="Conceptual diagram of a question, policy documents and source-cited answers">
+<rect width="740" height="450" fill="#eeefe9"/>
+<text x="35" y="44" font-family="Georgia,serif" font-size="19" font-style="italic" fill="#965946">Policy comparison / Retrieval</text>
+<line x1="35" x2="705" y1="60" y2="60" stroke="#bfc4bb"/>
+<g transform="translate(35,112)">
+<rect x="0" y="0" width="199" height="263" fill="#fafaf8" stroke="#b6bdb4"/>
+<text x="19" y="29" font-family="Arial,sans-serif" font-size="12" letter-spacing="1" fill="#59645c">SOURCE MATERIAL</text>
+<path d="M22 58 H178 M22 67 H144 M22 76 H167" stroke="#acb5aa" stroke-width="2"/>
+<path d="M22 113 H178 M22 122 H152 M22 131 H167" stroke="#acb5aa" stroke-width="2"/>
+<path d="M22 168 H178 M22 177 H133 M22 186 H163" stroke="#acb5aa" stroke-width="2"/>
+<rect x="18" y="214" width="162" height="31" fill="#e4e9df"/><text x="29" y="235" font-family="Arial,sans-serif" font-size="13" fill="#40564b">Documents indexed</text>
+</g>
+<g fill="none" stroke="#8c988f" stroke-width="1.5"><path d="M259 252H320"/><path d="M311 245l9 7-9 7"/></g>
+<g transform="translate(332,178)">
+<circle cx="62" cy="66" r="53" fill="#e0e6db" stroke="#9daa9f"/>
+<circle cx="62" cy="66" r="26" fill="none" stroke="#718577"/>
+<path d="M49 66l9 9 18-23" stroke="#718577" stroke-width="3" fill="none" stroke-linecap="round"/>
+<text x="62" y="142" text-anchor="middle" font-family="Georgia,serif" font-size="17" fill="#36493d">Search + retrieve</text>
+</g>
+<g fill="none" stroke="#8c988f" stroke-width="1.5"><path d="M451 252H499"/><path d="M490 245l9 7-9 7"/></g>
+<g transform="translate(516,112)">
+<rect x="0" y="0" width="190" height="263" fill="#fafaf8" stroke="#b6bdb4"/>
+<text x="17" y="29" font-family="Arial,sans-serif" font-size="12" letter-spacing="1" fill="#59645c">GROUNDED ANSWER</text>
+<path d="M17 58 H171 M17 68 H156 M17 78 H162 M17 88 H145" stroke="#8e9b92" stroke-width="2.3"/>
+<rect x="17" y="109" width="155" height="50" fill="#ecede8"/>
+<text x="28" y="130" font-family="Arial,sans-serif" font-size="12" fill="#526357">[1] Source policy</text><text x="28" y="147" font-family="Arial,sans-serif" font-size="12" fill="#526357">[2] Government guidance</text>
+<path d="M17 188 H165 M17 198 H149 M17 208 H169" stroke="#8e9b92" stroke-width="2.1"/>
+<text x="17" y="239" font-family="Georgia,serif" font-style="italic" font-size="18" fill="#965946">With citations.</text>
+</g>
+</svg>

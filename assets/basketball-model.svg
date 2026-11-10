@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 450" role="img" aria-label="NCAA model evaluation board showing XGBoost and logistic regression AUC from 2024 holdout">
+<rect width="740" height="450" fill="#f0eee9"/>
+<text x="33" y="42" font-family="Georgia,serif" font-size="20" font-style="italic" fill="#985d46">NCAA / Model notes</text>
+<line x1="32" x2="708" y1="60" y2="60" stroke="#c9c6be"/>
+<g transform="translate(37,93)">
+<rect x="0" y="0" width="286" height="289" fill="#f7f7f3" stroke="#c7c8c0"/>
+<rect x="23" y="22" width="240" height="244" fill="none" stroke="#a8b4ae" stroke-width="2"/>
+<path d="M143 22V266M23 143H263" stroke="#a8b4ae" stroke-width="2"/>
+<circle cx="143" cy="143" r="53" stroke="#a8b4ae" stroke-width="2" fill="none"/>
+<path d="M95 22v40h97V22M95 266v-40h97v40" stroke="#a8b4ae" stroke-width="2" fill="none"/>
+<path d="M123 22v24h40V22M123 266v-24h40v24" stroke="#a8b4ae" stroke-width="2" fill="none"/>
+<circle cx="143" cy="143" r="12" fill="#c68d70"/>
+</g>
+<g transform="translate(357,110)">
+<text x="0" y="0" font-family="Arial,sans-serif" font-size="13" fill="#66726a" letter-spacing="1">2024 HOLDOUT / AUC</text>
+<text x="0" y="63" font-family="Georgia,serif" font-size="51" fill="#303d36">0.774</text>
+<text x="171" y="63" font-family="Arial,sans-serif" font-size="13" fill="#6b706b">XGBoost</text>
+<path d="M0 88H330" stroke="#d1d4cc" stroke-width="10"/><path d="M0 88H256" stroke="#9b6e5b" stroke-width="10"/>
+<text x="0" y="138" font-family="Georgia,serif" font-size="51" fill="#303d36">0.772</text>
+<text x="171" y="138" font-family="Arial,sans-serif" font-size="13" fill="#6b706b">Logistic regression</text>
+<path d="M0 163H330" stroke="#d1d4cc" stroke-width="10"/><path d="M0 163H255" stroke="#83968b" stroke-width="10"/>
+<text x="0" y="220" font-family="Georgia,serif" font-size="20" font-style="italic" fill="#965946">Trained on 2019–2023 games.</text>
+<text x="0" y="246" font-family="Georgia,serif" font-size="20" font-style="italic" fill="#965946">Evaluated on 2024.</text>
+</g>
+</svg>

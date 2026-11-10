@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 450" role="img" aria-label="Live college basketball prediction pipeline from NCAA API statistics to trained model to win probability">
+<rect width="740" height="450" fill="#efeee9"/>
+<text x="36" y="45" font-family="Georgia,serif" font-size="21" font-style="italic" fill="#985d46">Live predictions / Python</text>
+<line x1="36" y1="60" x2="706" y2="60" stroke="#c8cac2"/>
+<g font-family="Arial,sans-serif" text-anchor="middle" fill="#3f4d4b">
+<rect x="35" y="150" width="191" height="145" fill="#fafaf7" stroke="#bfc9c3"/>
+<rect x="274" y="150" width="191" height="145" fill="#fafaf7" stroke="#bfc9c3"/>
+<rect x="513" y="150" width="191" height="145" fill="#fafaf7" stroke="#bfc9c3"/>
+<text x="130" y="179" font-size="12" fill="#6d746e">01 / INPUT</text><text x="130" y="222" font-size="20" font-family="Georgia,serif">NCAA statistics</text><text x="130" y="250" font-size="13">REST API</text>
+<text x="370" y="179" font-size="12" fill="#6d746e">02 / TRANSFORM</text><text x="370" y="222" font-size="20" font-family="Georgia,serif">Feature mapping</text><text x="370" y="250" font-size="13">Pregame differences</text>
+<text x="609" y="179" font-size="12" fill="#6d746e">03 / OUTPUT</text><text x="609" y="222" font-size="20" font-family="Georgia,serif">Win probability</text><text x="609" y="250" font-size="13">Trained models</text>
+</g>
+<g stroke="#aa7966" stroke-width="2" fill="none"><path d="M229 222h41M261 216l9 6-9 6M468 222h41M500 216l9 6-9 6"/></g>
+<text x="37" y="360" font-size="21" font-family="Georgia,serif" font-style="italic" fill="#965946">One predictor, two stages: train first, run on current matchups later.</text>
+</svg>

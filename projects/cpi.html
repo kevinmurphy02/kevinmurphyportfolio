@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><meta name="theme-color" content="#faf9f5">
+<title>CPI Data Pipeline | Kevin Murphy</title><meta name="description" content="Turning raw Bureau of Labor Statistics CPI files into a small, validated relational model for inflation analysis.">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../styles.css"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-top"><div class="wrap header"><a class="brand" href="../index.html" aria-label="Kevin Murphy homepage">Kevin Murphy<span class="period">.</span></a>
+<nav class="nav" aria-label="Main navigation"><a href="../index.html#work">Work</a><a href="../index.html#about">About</a><a href="../index.html#contact" class="nav-contact">Contact</a></nav></div></header>
+
+<main id="main" class="wrap">
+<a class="back-link" href="../index.html#work">← Back to selected work</a>
+<header class="article-lead"><div><p class="eyebrow">Data engineering · SQL</p><h1>CPI Data Pipeline</h1><p class="dek">Turning raw Bureau of Labor Statistics CPI files into a small, validated relational model for inflation analysis.</p></div>
+<dl class="article-facts"><div><dt>Format</dt><dd>SQL data pipeline</dd></div><div><dt>Context</dt><dd>Personal project</dd></div><div><dt>Tools</dt><dd>SQL, MySQL, BLS, Data modeling</dd></div></dl></header>
+<figure class="article-image"><img src="../assets/cpi-pipeline.svg" alt="BLS raw data transformed into fact and dimension tables and analysis views"><figcaption>Illustration of the project workflow, not a screenshot of the application.</figcaption></figure>
+<div class="article-flow">
+<section class="article-section"><h2>The starting data</h2><div class="copy"><p>The Bureau of Labor Statistics publishes monthly Consumer Price Index data in text files. They're useful real-world data, but not immediately ready for the kinds of questions you'd want to ask in SQL.</p><p>I used the BLS CPI <em>cu</em> time-series files as raw input and worked through loading, cleaning and modeling them in MySQL.</p></div></section>
+<section class="article-section"><h2>Turning files into tables</h2><div class="copy"><p>The pipeline normalizes period codes, converts text fields into usable types, filters valid monthly observations and separates the data into a fact table and related dimensions.</p>
+<div class="process"><div><small>01</small><b>Raw BLS files</b><span>Text source data</span></div><div><small>02</small><b>Validation</b><span>Types and periods</span></div><div><small>03</small><b>Relational model</b><span>Facts + dimensions</span></div><div><small>04</small><b>SQL views</b><span>Inflation reporting</span></div></div>
+<p>Tables include <strong>fact_cpi_monthly</strong> and dimensions for series, area, item and period. Building that structure means downstream queries don't have to repeat the cleaning logic.</p></div></section>
+<section class="article-section"><h2>The analysis layer</h2><div class="copy"><p>Once the data is organized, SQL views and window functions can compare the CPI index for a month with the corresponding month in the prior year. One example is the US all-items CPI series, <strong>CUUR0000SA0</strong>.</p><p>I also exported cleaned tables as CSVs for analysis outside MySQL. The focus wasn't a polished dashboard; it was making the input data reliable and the transformation repeatable.</p></div></section>
+<section class="article-section"><h2>Why I include it</h2><div class="copy"><p>This is a more straightforward project than the machine learning work, but it represents something important: most useful analysis starts with knowing where the data came from and getting it into a structure you trust.</p></div></section></div>
+<div class="article-end"><div><h2>Explore the source</h2><p>The repository contains the code, project documentation and technical details.</p></div><div class="article-actions"><a href="https://github.com/kevinmurphy02/SQL_BLS_Cleanup" target="_blank" rel="noopener noreferrer">Explore project on GitHub ↗</a></div></div>
+<a class="article-next" href="tigermed.html"><span>Next project</span><strong>TigerMed ↗</strong></a>
+</main><footer id="contact" class="footer"><div class="wrap">
+<div class="footer-grid"><div><div class="eyebrow">Get in touch</div><h2>Contact.</h2></div>
+<div class="footer-right"><p>Thanks for taking a look at my work. You can reach me by email or find me on LinkedIn.</p>
+<a class="footer-email" href="mailto:murphykevin24@gmail.com">murphykevin24@gmail.com</a>
+<div class="footer-links"><a href="https://www.linkedin.com/in/kevinmurphy1202/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/kevinmurphy02" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></div>
+<div class="footer-meta"><span>Kevin Murphy © 2026</span><span>Designed and built for GitHub Pages</span></div>
+</div></footer></body></html>
