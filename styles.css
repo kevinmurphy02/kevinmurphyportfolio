@@ -147,34 +147,33 @@ small,.small{font-size:14px}
 @media(max-width:760px){.article-lead h1.long-title{font-size:clamp(48px,9.7vw,74px);overflow-wrap:break-word}}
 
 
-/* Interactive 3D chair demo */
-
-.chair-demo {
-    width: 100%;
-    margin: 0 0 110px;
+.demo-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 18px 0;
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    color: var(--ink);
+    font-family: var(--font-serif);
+    font-size: clamp(26px, 3vw, 38px);
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
-.chair-demo iframe {
-    display: block;
-    width: 100%;
-    height: 720px;
-    border: 1px solid var(--line);
-    border-radius: 4px;
-    background: white;
+.demo-link:hover {
+    color: var(--accent);
 }
 
-.chair-demo figcaption {
+.demo-link span:last-child {
+    font-family: var(--font-sans);
+    font-size: 25px;
+}
+
+.demo-link-section p {
+    margin-top: 14px;
     font-size: 14px;
     color: var(--secondary);
-    margin-top: 14px;
-}
-
-@media (max-width: 760px) {
-    .chair-demo iframe {
-        height: 850px;
-    }
-
-    .chair-demo {
-        margin-bottom: 75px;
-    }
+    line-height: 1.6;
 }
