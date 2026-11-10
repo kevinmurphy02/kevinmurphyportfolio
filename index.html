@@ -1,54 +1,329 @@
 <!DOCTYPE html>
-
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="light" name="color-scheme"/><meta content="#faf9f5" name="theme-color"/>
-<title>Portfolio | Kevin Murphy</title><meta content="Kevin Murphy, Clemson University Computer Science student. Selected projects in data, machine learning, software and AWS cloud architecture." name="description"/>
-<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="styles.css" rel="stylesheet"/></head><body>
-<a class="skip" href="#main">Skip to content</a>
-<header class="site-top"><div class="wrap header"><a aria-label="Kevin Murphy homepage" class="brand" href="index.html">Kevin Murphy<span class="period">.</span></a>
-<nav aria-label="Main navigation" class="nav"><a href="index.html#work">Work</a><a href="index.html#about">About</a><a class="nav-contact" href="index.html#contact">Contact</a></nav></div></header>
-<main class="wrap" id="main">
-<section aria-labelledby="hero-title" class="home-hero"><div><p class="hello">Hi, I'm</p><h1 class="hero-name" id="hero-title"><span>Kevin</span><span class="surname">Murphy.</span></h1></div>
-<div class="hero-summary"><p>Computer Science student at Clemson University.</p>
-<p class="extra">I enjoy working with data, writing software and figuring out how systems fit together. Graduating December 2026.</p>
-<a class="link-arrow" href="#work">Take a look at my work <span aria-hidden="true" class="arrow">↓</span></a></div></section>
-<section aria-label="Selected work" class="work" id="work"><div class="section-heading"><h2>Selected work</h2><span class="small">Seven projects / Different kinds of problems</span></div>
-<article class="project-row"><span aria-hidden="true" class="project-index">01</span>
-<div class="project-description"><p class="category">Full-stack development · Clemson team project</p><h3><a href="projects/good-driver.html">Good Driver Incentive Program</a></h3>
-<p class="intro">A rewards platform for drivers, sponsors and administrators, with separate sponsor balances, purchasing workflows and reporting.</p><p class="tech-line">Django / MySQL / AWS Elastic Beanstalk / GitHub Actions</p>
-<a class="link-arrow" href="projects/good-driver.html">Read case study <span aria-hidden="true" class="arrow">↗</span></a><details class="project-expander"><summary>Technical overview</summary><p>Drivers can participate in multiple sponsor programs without mixing points. The Django application handles role-specific workflows, transaction-safe redemptions, imports and reporting. Hosted on AWS; code is not public due to course restrictions.</p><a href="projects/good-driver.html">See the full case study ↗</a></details></div>
-<a aria-label="Read Good Driver Incentive Program case study" class="project-media" href="projects/good-driver.html"><img alt="Conceptual visual showing independent sponsor balances and reward redemptions" loading="lazy" src="assets/good-driver-preview.svg"/></a></article><article class="project-row"><span aria-hidden="true" class="project-index">02</span>
-<div class="project-description"><p class="category">Front-end development · Interactive 3D</p><h3><a href="projects/chair-configurator.html">3D Product Configurator</a></h3>
-<p class="intro">An office chair configurator with a live 3D preview, adjustable finishes and accessories, itemized pricing and shareable builds.</p><p class="tech-line">React / TypeScript / Three.js / React Three Fiber</p>
-<a class="link-arrow" href="projects/chair-configurator.html">Read case study <span aria-hidden="true" class="arrow">↗</span></a><details class="project-expander"><summary>Technical overview</summary><p>The chair is modeled with procedural Three.js geometry. Typed React state drives model changes and a deterministic pricing function. URL query parameters preserve selections. This is a front-end concept rather than an actual storefront.</p><a href="projects/chair-configurator.html">See the full case study ↗</a></details></div>
-<a aria-label="Read 3D Product Configurator case study" class="project-media" href="projects/chair-configurator.html"><img alt="Illustrative office chair schematic with customizable finishes" loading="lazy" src="assets/chair-preview.svg"/></a></article><article class="project-row"><span aria-hidden="true" class="project-index">03</span>
-<div class="project-description"><p class="category">Cloud architecture · Academic case study</p><h3><a href="projects/tigermed.html">TigerMed</a></h3>
-<p class="intro">A proposed AWS migration for a fictional healthcare platform, with attention to regional patient data, security and recovery.</p><p class="tech-line">AWS / VPC / EC2 / RDS / S3 / SQS</p><a class="link-arrow" href="projects/tigermed.html">Read case study <span aria-hidden="true" class="arrow">↗</span></a></div>
-<a aria-label="Read TigerMed case study" class="project-media" href="projects/tigermed.html"><img alt="Conceptual illustration of three planned AWS production regions" loading="lazy" src="assets/tigermed-preview.svg"/></a></article><article class="project-row"><span aria-hidden="true" class="project-index">04</span>
-<div class="project-description"><p class="category">AI applications · Security</p><h3><a href="projects/rag.html">AI Safety Policy RAG</a></h3>
-<p class="intro">A local tool for asking questions about AI safety policies and comparing answers with citations from the source documents.</p><p class="tech-line">Python / ChromaDB / Ollama / Streamlit</p><a class="link-arrow" href="projects/rag.html">Read case study <span aria-hidden="true" class="arrow">↗</span></a></div>
-<a aria-label="Read AI Safety Policy RAG case study" class="project-media" href="projects/rag.html"><img alt="Diagram of AI governance documents feeding a citation-grounded answer" loading="lazy" src="assets/rag-illustration.svg"/></a></article><article class="project-row"><span aria-hidden="true" class="project-index">05</span>
-<div class="project-description"><p class="category">Machine learning · College basketball</p><h3><a href="projects/ncaa-training.html">NCAA Model Training</a></h3>
-<p class="intro">Training and evaluating models on past NCAA basketball results to understand which pregame statistics carry useful predictive signal.</p><p class="tech-line">Python / Pandas / Logistic Regression / XGBoost</p><a class="link-arrow" href="projects/ncaa-training.html">Read case study <span aria-hidden="true" class="arrow">↗</span></a></div>
-<a aria-label="Read NCAA Model Training case study" class="project-media" href="projects/ncaa-training.html"><img alt="Basketball court sketch and held-out performance of two machine learning models" loading="lazy" src="assets/basketball-model.svg"/></a></article><article class="project-row"><span aria-hidden="true" class="project-index">06</span>
-<div class="project-description"><p class="category">Python application · Sports data</p><h3><a href="projects/ncaa-predictor.html">Live Game Predictor</a></h3>
-<p class="intro">The follow-up to the training project: fetch current team statistics, map them to the model inputs and calculate win probabilities for matchups.</p><p class="tech-line">Python / NCAA API / Feature engineering</p><a class="link-arrow" href="projects/ncaa-predictor.html">Read case study <span aria-hidden="true" class="arrow">↗</span></a></div>
-<a aria-label="Read Live Game Predictor case study" class="project-media" href="projects/ncaa-predictor.html"><img alt="Live NCAA statistics passing through feature mapping to model predictions" loading="lazy" src="assets/live-predictor.svg"/></a></article><article class="project-row"><span aria-hidden="true" class="project-index">07</span>
-<div class="project-description"><p class="category">Data engineering · SQL</p><h3><a href="projects/cpi.html">CPI Data Pipeline</a></h3>
-<p class="intro">Turning raw Bureau of Labor Statistics CPI files into a small, validated relational model for inflation analysis.</p><p class="tech-line">SQL / MySQL / BLS / Data modeling</p><a class="link-arrow" href="projects/cpi.html">Read case study <span aria-hidden="true" class="arrow">↗</span></a></div>
-<a aria-label="Read CPI Data Pipeline case study" class="project-media" href="projects/cpi.html"><img alt="BLS raw data transformed into fact and dimension tables and analysis views" loading="lazy" src="assets/cpi-pipeline.svg"/></a></article></section>
-<section aria-labelledby="about-title" class="about-section" id="about"><div><span class="eyebrow">A little more</span><h2 id="about-title">About me</h2></div><div class="about-content">
-<p>I'm from Chicago and I'm finishing my Computer Science degree at Clemson. Most of what I've learned outside class has come from building projects and trying to make the next version better.</p>
-<p>My interests aren't limited to one corner of tech. I've spent time with Python and SQL, machine learning models, AWS infrastructure, and work that involves explaining technology to other people.</p>
-<p class="quiet">Outside of school, I follow college sports, play golf and spend time with friends and family.</p>
-<div class="about-details"><div><h4>Education</h4><p>Clemson University<br/>B.S. Computer Science<br/>Expected December 2026</p></div>
-<div><h4>Beyond the projects</h4><p>AWS Certified Solutions Architect – Associate. Previously led operations and a team of up to 48 people at Oak Lawn Aqua Club.</p></div></div>
-</div></section>
-</main><footer class="footer" id="contact"><div class="wrap">
-<div class="footer-grid"><div><div class="eyebrow">Get in touch</div><h2>Contact.</h2></div>
-<div class="footer-right"><p>Thanks for taking a look at my work. You can reach me by email or find me on LinkedIn.</p>
-<a class="footer-email" href="mailto:murphykevin24@gmail.com">murphykevin24@gmail.com</a>
-<div class="footer-links"><a href="https://www.linkedin.com/in/kevinmurphy1202/" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a><a href="https://github.com/kevinmurphy02" rel="noopener noreferrer" target="_blank">GitHub ↗</a></div></div></div>
-<div class="footer-meta"><span>Kevin Murphy © 2026</span><span>Designed and built for GitHub Pages</span></div>
-</div></footer></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <meta content="light" name="color-scheme"/>
+    <meta content="#faf9f5" name="theme-color"/>
+    <title>Portfolio | Kevin Murphy</title>
+    <meta
+      content="Kevin Murphy, Clemson University Computer Science student. Selected projects in data, machine learning, software and AWS cloud architecture."
+      name="description"
+    />
+    <link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-top">
+      <div class="wrap header">
+        <a aria-label="Kevin Murphy homepage" class="brand" href="index.html">
+          Kevin Murphy<span class="period">.</span>
+        </a>
+        <nav aria-label="Main navigation" class="nav">
+          <a href="index.html#work">Work</a>
+          <a href="index.html#about">About</a>
+          <a class="nav-contact" href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap" id="main">
+      <section aria-labelledby="hero-title" class="home-hero">
+        <div>
+          <p class="hello">Hi, I'm</p>
+          <h1 class="hero-name" id="hero-title">
+            <span>Kevin</span>
+            <span class="surname">Murphy.</span>
+          </h1>
+        </div>
+        <div class="hero-summary">
+          <p>Computer Science student at Clemson University.</p>
+          <p class="extra">
+            I enjoy working with data, writing software and figuring out how systems fit together.
+            Graduating December 2026.
+          </p>
+          <a class="link-arrow" href="#work">
+            Take a look at my work <span aria-hidden="true" class="arrow">↓</span>
+          </a>
+        </div>
+      </section>
+      <section aria-label="Selected work" class="work" id="work">
+        <div class="section-heading">
+          <h2>Selected work</h2>
+          <span class="small">Seven projects / Different kinds of problems</span>
+        </div>
+        <article class="project-row">
+          <span aria-hidden="true" class="project-index">01</span>
+          <div class="project-description">
+            <p class="category">Full-stack development · Clemson team project</p>
+            <h3><a href="projects/good-driver.html">Good Driver Incentive Program</a></h3>
+            <p class="intro">
+              A rewards platform for drivers, sponsors and administrators, with separate sponsor
+              balances, purchasing workflows and reporting.
+            </p>
+            <p class="tech-line">Django / MySQL / AWS Elastic Beanstalk / GitHub Actions</p>
+            <a class="link-arrow" href="projects/good-driver.html">
+              Read case study <span aria-hidden="true" class="arrow">↗</span>
+            </a>
+            <details class="project-expander">
+              <summary>Technical overview</summary>
+              <p>
+                Drivers can participate in multiple sponsor programs without mixing points. The
+                Django application handles role-specific workflows, transaction-safe redemptions,
+                imports and reporting. Hosted on AWS; code is not public due to course restrictions.
+              </p>
+              <a href="projects/good-driver.html">See the full case study ↗</a>
+            </details>
+          </div>
+          <a
+            aria-label="Read Good Driver Incentive Program case study"
+            class="project-media"
+            href="projects/good-driver.html"
+          >
+            <img
+              alt="Conceptual visual showing independent sponsor balances and reward redemptions"
+              loading="lazy"
+              src="assets/good-driver-preview.svg"
+            />
+          </a>
+        </article>
+        <article class="project-row">
+          <span aria-hidden="true" class="project-index">02</span>
+          <div class="project-description">
+            <p class="category">Front-end development · Interactive 3D</p>
+            <h3><a href="projects/chair-configurator.html">3D Product Configurator</a></h3>
+            <p class="intro">
+              An office chair configurator with a live 3D preview, adjustable finishes and
+              accessories, itemized pricing and shareable builds.
+            </p>
+            <p class="tech-line">React / TypeScript / Three.js / React Three Fiber</p>
+            <a class="link-arrow" href="projects/chair-configurator.html">
+              Read case study <span aria-hidden="true" class="arrow">↗</span>
+            </a>
+            <details class="project-expander">
+              <summary>Technical overview</summary>
+              <p>
+                The chair is modeled with procedural Three.js geometry. Typed React state drives
+                model changes and a deterministic pricing function. URL query parameters preserve
+                selections. This is a front-end concept rather than an actual storefront.
+              </p>
+              <a href="projects/chair-configurator.html">See the full case study ↗</a>
+            </details>
+          </div>
+          <a
+            aria-label="Read 3D Product Configurator case study"
+            class="project-media"
+            href="projects/chair-configurator.html"
+          >
+            <img
+              alt="Illustrative office chair schematic with customizable finishes"
+              loading="lazy"
+              src="assets/chair-preview.svg"
+            />
+          </a>
+        </article>
+        <article class="project-row">
+          <span aria-hidden="true" class="project-index">03</span>
+          <div class="project-description">
+            <p class="category">Cloud architecture · Academic case study</p>
+            <h3><a href="projects/tigermed.html">TigerMed</a></h3>
+            <p class="intro">
+              A proposed AWS migration for a fictional healthcare platform, with attention to
+              regional patient data, security and recovery.
+            </p>
+            <p class="tech-line">AWS / VPC / EC2 / RDS / S3 / SQS</p>
+            <a class="link-arrow" href="projects/tigermed.html">
+              Read case study <span aria-hidden="true" class="arrow">↗</span>
+            </a>
+          </div>
+          <a
+            aria-label="Read TigerMed case study"
+            class="project-media"
+            href="projects/tigermed.html"
+          >
+            <img
+              alt="Conceptual illustration of three planned AWS production regions"
+              loading="lazy"
+              src="assets/tigermed-preview.svg"
+            />
+          </a>
+        </article>
+        <article class="project-row">
+          <span aria-hidden="true" class="project-index">04</span>
+          <div class="project-description">
+            <p class="category">AI applications · Security</p>
+            <h3><a href="projects/rag.html">AI Safety Policy RAG</a></h3>
+            <p class="intro">
+              A local tool for asking questions about AI safety policies and comparing answers with
+              citations from the source documents.
+            </p>
+            <p class="tech-line">Python / ChromaDB / Ollama / Streamlit</p>
+            <a class="link-arrow" href="projects/rag.html">
+              Read case study <span aria-hidden="true" class="arrow">↗</span>
+            </a>
+          </div>
+          <a
+            aria-label="Read AI Safety Policy RAG case study"
+            class="project-media"
+            href="projects/rag.html"
+          >
+            <img
+              alt="Diagram of AI governance documents feeding a citation-grounded answer"
+              loading="lazy"
+              src="assets/rag-illustration.svg"
+            />
+          </a>
+        </article>
+        <article class="project-row">
+          <span aria-hidden="true" class="project-index">05</span>
+          <div class="project-description">
+            <p class="category">Machine learning · College basketball</p>
+            <h3><a href="projects/ncaa-training.html">NCAA Model Training</a></h3>
+            <p class="intro">
+              Training and evaluating models on past NCAA basketball results to understand which
+              pregame statistics carry useful predictive signal.
+            </p>
+            <p class="tech-line">Python / Pandas / Logistic Regression / XGBoost</p>
+            <a class="link-arrow" href="projects/ncaa-training.html">
+              Read case study <span aria-hidden="true" class="arrow">↗</span>
+            </a>
+          </div>
+          <a
+            aria-label="Read NCAA Model Training case study"
+            class="project-media"
+            href="projects/ncaa-training.html"
+          >
+            <img
+              alt="Basketball court sketch and held-out performance of two machine learning models"
+              loading="lazy"
+              src="assets/basketball-model.svg"
+            />
+          </a>
+        </article>
+        <article class="project-row">
+          <span aria-hidden="true" class="project-index">06</span>
+          <div class="project-description">
+            <p class="category">Python application · Sports data</p>
+            <h3><a href="projects/ncaa-predictor.html">Live Game Predictor</a></h3>
+            <p class="intro">
+              The follow-up to the training project: fetch current team statistics, map them to the
+              model inputs and calculate win probabilities for matchups.
+            </p>
+            <p class="tech-line">Python / NCAA API / Feature engineering</p>
+            <a class="link-arrow" href="projects/ncaa-predictor.html">
+              Read case study <span aria-hidden="true" class="arrow">↗</span>
+            </a>
+          </div>
+          <a
+            aria-label="Read Live Game Predictor case study"
+            class="project-media"
+            href="projects/ncaa-predictor.html"
+          >
+            <img
+              alt="Live NCAA statistics passing through feature mapping to model predictions"
+              loading="lazy"
+              src="assets/live-predictor.svg"
+            />
+          </a>
+        </article>
+        <article class="project-row">
+          <span aria-hidden="true" class="project-index">07</span>
+          <div class="project-description">
+            <p class="category">Data engineering · SQL</p>
+            <h3><a href="projects/cpi.html">CPI Data Pipeline</a></h3>
+            <p class="intro">
+              Turning raw Bureau of Labor Statistics CPI files into a small, validated relational
+              model for inflation analysis.
+            </p>
+            <p class="tech-line">SQL / MySQL / BLS / Data modeling</p>
+            <a class="link-arrow" href="projects/cpi.html">
+              Read case study <span aria-hidden="true" class="arrow">↗</span>
+            </a>
+          </div>
+          <a
+            aria-label="Read CPI Data Pipeline case study"
+            class="project-media"
+            href="projects/cpi.html"
+          >
+            <img
+              alt="BLS raw data transformed into fact and dimension tables and analysis views"
+              loading="lazy"
+              src="assets/cpi-pipeline.svg"
+            />
+          </a>
+        </article>
+      </section>
+      <section aria-labelledby="about-title" class="about-section" id="about">
+        <div>
+          <span class="eyebrow">A little more</span>
+          <h2 id="about-title">About me</h2>
+        </div>
+        <div class="about-content">
+          <p>
+            I'm from Chicago and I'm finishing my Computer Science degree at Clemson. Most of what
+            I've learned outside class has come from building projects and trying to make the next
+            version better.
+          </p>
+          <p>
+            My interests aren't limited to one corner of tech. I've spent time with Python and SQL,
+            machine learning models, AWS infrastructure, and work that involves explaining
+            technology to other people.
+          </p>
+          <p class="quiet">
+            Outside of school, I follow college sports, play golf and spend time with friends and
+            family.
+          </p>
+          <div class="about-details">
+            <div>
+              <h4>Education</h4>
+              <p>Clemson University<br/>B.S. Computer Science<br/>Expected December 2026</p>
+            </div>
+            <div>
+              <h4>Beyond the projects</h4>
+              <p>
+                AWS Certified Solutions Architect – Associate. Previously led operations and a team
+                of up to 48 people at Oak Lawn Aqua Club.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="contact">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <div class="eyebrow">
+              Get in touch
+            </div>
+            <h2>Contact.</h2>
+          </div>
+          <div class="footer-right">
+            <p>
+              Thanks for taking a look at my work. You can reach me by email or find me on LinkedIn.
+            </p>
+            <a class="footer-email" href="mailto:murphykevin24@gmail.com">
+              murphykevin24@gmail.com
+            </a>
+            <div class="footer-links">
+              <a
+                href="https://www.linkedin.com/in/kevinmurphy1202/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                LinkedIn ↗
+              </a>
+              <a href="https://github.com/kevinmurphy02" rel="noopener noreferrer" target="_blank">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-meta">
+          <span>Kevin Murphy © 2026</span>
+          <span>Designed and built for GitHub Pages</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
