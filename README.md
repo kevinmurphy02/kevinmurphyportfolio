@@ -1,42 +1,39 @@
-# Kevin Murphy | Portfolio v3
+# Kevin Murphy | Portfolio v4
 
-A static, editorial portfolio designed for GitHub Pages. No build step, npm dependencies, framework or JavaScript required.
+Version 3 with two new case studies and matching project previews. Static HTML and CSS, ready for the existing GitHub Pages project path. No build step.
 
-## Structure
+## New projects
 
-- `index.html`: Home page and project index
-- `projects/*.html`: Five standalone, long-form case studies
-- `styles.css`: Global type, layout, spacing and responsive styling
-- `assets/*.svg`: Custom, conceptual illustrations
-- `assets/tigermed-architecture.png`: Actual diagram extracted from the user's presentation
-- `assets/TigerMed_Cloud_Architecture_Portfolio.pdf` / `.pptx`: Original academic presentation
+- `projects/good-driver.html`: Good Driver Incentive Program. Team-based Django/MySQL rewards platform; public hosted application link only. No private GitHub repository link or proprietary code included.
+- `projects/chair-configurator.html`: 3D Product Configurator. React/TypeScript/React Three Fiber portfolio app, linked to its public GitHub repository. No invented live demo URL.
+- `assets/good-driver-preview.svg` and `assets/chair-preview.svg`: Clearly labeled conceptual artwork, **not real application screenshots**.
 
-## Design direction
+The homepage has seven project cards. The two new cards include an optional **Technical overview** disclosure plus a direct link to their full case study, consistent with the rest of the website.
 
-Alegreya and Alegreya Sans (requested through Google Fonts, with local serif/sans fallback). Warm paper background, dark type, muted brick accent, large margins, fewer boxes, no neon, no résumé-style filler slogans. Strongly editorial rather than a startup landing page.
+## Deploy
 
-## Deployment
+Extract the archive, then replace the files at the published root of `github.com/kevinmurphy02/kevinmurphyportfolio` with this folder's `index.html`, `styles.css`, `projects/`, and `assets/`. Keep those folder names and relative paths.
 
-1. Download / extract the zip.
-2. Open `index.html` locally to inspect (some browsers may restrict local file navigation, but links work when served).
-3. In `github.com/kevinmurphy02/kevinmurphyportfolio`, replace the published root files with this folder's contents. Preserve the `projects/` and `assets/` directories.
-4. GitHub Pages will continue serving `https://kevinmurphy02.github.io/kevinmurphyportfolio/` after the deployment completes.
+Site: https://kevinmurphy02.github.io/kevinmurphyportfolio/
 
-The CSS and every link are relative so this works under the `/kevinmurphyportfolio/` repository path. The site has **not** been published; deployment requires your action.
+This package does not deploy itself.
 
-## Link audit
+## Verification and caveats
 
-- https://github.com/kevinmurphy02/College_Basketball_Training_Model
-- https://github.com/kevinmurphy02/College_Basketball_Prediction_Model
-- https://github.com/kevinmurphy02/SQL_BLS_Cleanup
-- https://github.com/kevinmurphy02/ai_safety_policy_RAG
+- The public hosted application https://team06.cpsc4911.com/ exposes the Team #06 application and login. Dashboards may require credentials.
+- The public repository https://github.com/kevinmurphy02/atelier-3d-modeling-chair-configurator contains project details and Vite setup instructions. At review time, it did not list a verified live demo.
+- Driver app page describes the **team's project**, not verified individual ownership of features. Add your own contribution section once you choose precise contributions.
+- Chair pricing is illustrative, client-side. No sales transactions or backend are claimed.
+- The package contains no screenshots of either app. You can add real screenshots later by replacing the SVG previews and changing `img src` in the relevant HTML files.
+- Footer email CSS was corrected to stay on one line at common desktop and phone sizes.
 
-## Content notes
+## Files
 
-- The first four projects were checked against their public repositories and the current portfolio.
-- TigerMed content is grounded in the user-provided PPTX, PDF and standalone case study.
-- TigerMed is carefully labeled a proposal, not a deployment, and the cost is expressly labeled a classroom estimate.
-- The diagram and graphics are only illustrations; the site does not claim a live deployment or fabricated results.
-- The internship title/employer is intentionally not asserted because the supplied resume variants disagree.
-- An unfinalized résumé PDF is not embedded. Add a verified PDF to `assets/` and link it in navigation if desired.
-- Email and LinkedIn match user-provided résumé materials. Update them directly in the HTML if needed.
+- `index.html`
+- `styles.css`
+- `projects/*.html`: Seven long-form case studies
+- `assets/`: illustrations, diagrams and TigerMed attachments
+
+## Local checks
+
+All relative local references were checked against the packaged files. A headless browser navigation attempt was blocked by this execution environment, so cross-browser visual rendering was not verified.
