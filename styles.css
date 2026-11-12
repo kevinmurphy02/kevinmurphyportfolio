@@ -177,3 +177,26 @@ small,.small{font-size:14px}
 .demo-link:hover span {
     transform: translate(5px, -5px);
 }
+
+/* LabVIEW project */
+
+.labview-hero {
+    background: #f0f0ed;
+    padding: clamp(12px, 2.5vw, 32px);
+}
+
+.labview-hero img,
+.labview-evidence img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+}
+
+.labview-formula {
+    font-family: var(--font-sans);
+    font-size: clamp(21px, 2.2vw, 28px);
+    padding: 22px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
